@@ -54,6 +54,7 @@ HTML:
     <a href="#/product">Product</a><br/>
     <div ng-view></div>
 </div>
+</body>
 </html>
 ```
 
