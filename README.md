@@ -4,8 +4,7 @@ This repository contains demo for setting page **title** dynamically in AngularJ
 I am going to explain how to set **title** to different pages dynamically in our project.
 
 ```JavaScript
-var myApp = angular.module('myApp', ['ngRoute'])
-
+var myApp = angular.module('myApp', ['ngRoute']);
 myApp.config(['$routeProvider', function($routeProvider) {
     $routeProvider
        .when('/home', {
@@ -34,11 +33,11 @@ myApp.run(['$location', '$rootScope', function($location, $rootScope) {
 }]);
 ```
 
-While running the app i added a route change success listener callback in which **rootScope** **title** variable is set to **title** of corresponding route.
+While running the app I added a route change success listener callback in which **rootScope** **title** variable is set to **title** of corresponding route.
 The above if check is necessary because when no route is defined then it throws an error that "**title** of undefined called"
 
-There are many other similar event listeners like $routeChangeStart, $routeChangeError, $routeUpdate which are functional as their name suggests.
-For more information on event listeners refer to angularjs [docs](https://docs.angularjs.org/api/ngRoute/service/$route).
+There are many other similar event listeners like **$routeChangeStart**, **$routeChangeError**, **$routeUpdate** which are functional as their name suggests.
+For more information on event listeners refer to **[AngularJS docs](https://docs.angularjs.org/api/ngRoute/service/$route)**.
 
 
 HTML:
@@ -53,7 +52,6 @@ HTML:
 <div>
     <a href="#/home">Home</a><br/>
     <a href="#/product">Product</a><br/>
-
     <div ng-view></div>
 </div>
 </html>
