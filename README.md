@@ -1,7 +1,7 @@
 # Dynamic-Title-in-AngularJS
-This repository contains demo for setting page title dynamically in AngularJS.
+This repository contains demo for setting page **title** dynamically in AngularJS.
 
-I am going to explain how to set title to different pages dynamically in our project.
+I am going to explain how to set **title** to different pages dynamically in our project.
 
 ```JavaScript
 var myApp = angular.module('myApp', ['ngRoute'])
@@ -22,7 +22,7 @@ myApp.config(['$routeProvider', function($routeProvider) {
     }]);
 ```
 
-in the above code i have added title for each page according to its angular route
+in the above code i have added **title** for each page according to its angular route
 
 ```JavaScript
 myApp.run(['$location', '$rootScope', function($location, $rootScope) {
@@ -34,11 +34,11 @@ myApp.run(['$location', '$rootScope', function($location, $rootScope) {
 }]);
 ```
 
-While running the app i added a route change success listener callback in which rootscope title variable is set to title of corresponding route.
-The above if check is necessary because when no route is defined then it throws an error that "title of undefined called"
+While running the app i added a route change success listener callback in which **rootScope** **title** variable is set to **title** of corresponding route.
+The above if check is necessary because when no route is defined then it throws an error that "**title** of undefined called"
 
 There are many other similar event listeners like $routeChangeStart, $routeChangeError, $routeUpdate which are functional as their name suggests.
-For more information on event listeners refer to angularjs docs(https://docs.angularjs.org/api/ngRoute/service/$route).
+For more information on event listeners refer to angularjs [docs](https://docs.angularjs.org/api/ngRoute/service/$route).
 
 
 HTML:
@@ -59,5 +59,5 @@ HTML:
 </html>
 ```
 
-In this way we can set title using rootscope variable which is overwritten on every route change success event.
+In this way we can set **title** using **rootScope** variable which is overwritten on every route change success event.
 In the similar way we can set meta data for different pages in our project dynamically.
