@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en"  ng-app="myApp">
+<head>
+    <title ng-bind="'Page Title ' + title">AngularJS Demo</title>
+</head>
+<body>
+<div>
+    <a href="#/home">Home</a><br/>
+    <a href="#/product">Product</a><br/>
+
+    <div ng-view></div>
+</div>
+<script src="../lib/dist/angular.min.js"></script>
+<script src="../lib/dist/angular-route.min.js"></script>
+<script src="../js/route.js">
+</script>
+</body>
+</html>
